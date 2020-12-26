@@ -4,9 +4,15 @@ This is a authorization library for microservices architecture using JWT
 
 ## Getting started
 
+```bash
+npm i @mkhizeryounas/authorizer
+```
+
 ### Initialize context
 
 ```javascript
+const Authorizer = require('@mkhizeryounas/authorizer');
+
 const authorizer = new Authorizer({
   url: 'http://localhost:8090/user/',
 });
