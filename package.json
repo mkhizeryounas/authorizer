@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shopistan/nova-authorizer.git"
+    "url": "git+https://github.com/mkhizeryounas/authorizer.git"
   },
-  "author": "",
+  "author": "mkhizeryounas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shopistan/nova-authorizer/issues"
+    "url": "https://github.com/mkhizeryounas/authorizer/issues"
   },
-  "homepage": "https://github.com/shopistan/nova-authorizer#readme",
+  "homepage": "https://github.com/mkhizeryounas/authorizer#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "jsonwebtoken": "^8.5.1",
