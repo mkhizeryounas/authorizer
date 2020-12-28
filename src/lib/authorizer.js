@@ -34,7 +34,12 @@ class Authorizer {
     const CACHE_KEY = 'authorizerPublicKey';
     let publicKey = authorizerCache.get(CACHE_KEY);
     if (!publicKey) {
-      let jwkData = (await axios.get(this.opts.url + this.opts.path)).data;
+      let jwkData = (
+        await axios.get(
+          (this.opts.url.endsWith('/') ? this.opts.url : this.opts.url + '/') +
+            this.opts.path
+        )
+      ).data;
       publicKey = this.extractKeyFromJson({
         json: jwkData,
         key: this.opts.key.split('.'),

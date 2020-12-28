@@ -1,7 +1,7 @@
 const Authorizer = require('../lib/authorizer');
 
 const authorizer = new Authorizer({
-  url: 'http://localhost:8090/user/',
+  url: 'http://localhost:8090/user',
 });
 
 const req = {
